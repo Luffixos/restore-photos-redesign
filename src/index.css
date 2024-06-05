@@ -28,3 +28,7 @@ body {
 .animate-fadeIn.delay-300 {
   animation-delay: 300ms;
 }
+
+button, a {
+  cursor: pointer;
+}
