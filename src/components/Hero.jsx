@@ -1,18 +1,17 @@
 import React from 'react';
 import Button from './Button';
-import heroPic from '../assets/pic.png';
-import avatar1 from '../assets/Avatar-1.png'
-import avatar2 from '../assets/Avatar-2.png'
-import avatar3 from '../assets/Avatar-3.png'
-import avatar4 from '../assets/Avatar-4.png'
-import avatar5 from '../assets/Avatar.png'
-
+import Slider from './Slider';
+import avatar1 from '../assets/Avatar-1.png';
+import avatar2 from '../assets/Avatar-2.png';
+import avatar3 from '../assets/Avatar-3.png';
+import avatar4 from '../assets/Avatar-4.png';
+import avatar5 from '../assets/Avatar.png';
 
 function Hero() {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between bg-white text-black py-20 px-4 mx-5 lg:mx-20 animate-fadeIn">
       <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <div className="w-full lg:w-[700px] h-auto mb-4">
+        <div className="w-full lg:w-[525px] h-auto mb-4">
           <span className="text-purple-900 text-4xl lg:text-7xl font-bold leading-tight lg:leading-none block lg:inline">Restore</span>
           <span className="text-black text-4xl lg:text-7xl font-normal leading-tight lg:leading-none block lg:inline"> your photos in seconds</span>
         </div>
@@ -36,8 +35,8 @@ function Hero() {
           <span className="ml-4 text-gray-700 text-sm lg:text-lg">600k+ users</span>
         </div>
       </div>
-      <div className="lg:w-1/2">
-        <img src={heroPic} alt="Hero" className="w-full h-auto animate-fadeIn delay-300" />
+      <div className="lg:w-1/2 flex justify-center">
+        <Slider />
       </div>
     </div>
   );

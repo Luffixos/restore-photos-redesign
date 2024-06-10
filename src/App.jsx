@@ -9,13 +9,14 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+    <>
       <div className="font-sans">
         <nav className="bg-white p-4 flex items-center justify-between mx-4 lg:mx-20">
           <img src={logoPic} className="h-10" alt="Logo" />
           <div className="hidden lg:flex space-x-8">
-            <Link to="/" className="text-black hover:text-gray-900 transition duration-300">Home</Link>
-            <Link to="/open-source" className="text-black hover:text-gray-400 transition duration-300">Open Source</Link>
-            <Link to="/pricing" className="text-black hover:text-gray-400 transition duration-300">Pricing</Link>
+            <Link to="/" className="text-black hover:text-gray-900 transition duration-300 hover:underline">Home</Link>
+            <Link to="/open-source" className="text-black hover:text-gray-400 transition duration-300 hover:underline">Open Source</Link>
+            <Link to="/pricing" className="text-black hover:text-gray-400 transition duration-300 hover:underline">Pricing</Link>
           </div>
           <Button onClick={() => alert('Sign Up clicked!')}>Sign Up</Button>
           <div className="lg:hidden flex items-center">
@@ -35,6 +36,7 @@ function App() {
         </nav>
         <Hero />
       </div>
+    </>
   );
 }
 
